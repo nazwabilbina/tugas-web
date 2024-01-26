@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Shopee-Like Store</title>
+    <style>
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+}
+/* ... Kode CSS sebelumnya ... */
+
+header h1 {
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0;
+  font-weight: bold;
+  color: white; /* Warna yang serupa dengan logo Shopee */
+}
+
+/* ... Kode CSS setelahnya ... */
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 1em 0;
+}
+
+nav {
+  text-align: center;
+  background-color: #333;
+  transition: background-color 0.3s ease;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  color: black;
+  background-color: white;
+}
+
+section.featured-products {
+  max-width: 1200px;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.product {
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+.product h3 {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.product p {
+  color: #555;
+  padding: 0 10px 10px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: black;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+    </style>
+</head>
+<body>
+
+  <header>
+    <h1>Shopee-Like Store</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Beranda</a></li>
+        <li><a href="#">Produk</a></li>
+        <li><a href="#">Keranjang</a></li>
+        <li><a href="#">Akun</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="featured-products">
+    <h2>Produk Terpopuler</h2>
+    <div class="product">
+      <img src="product1.jpg" alt="Produk 1">
+      <h3>Produk 1</h3>
+      <p>Deskripsi Produk 1.</p>
+      <button>Beli Sekarang</button>
+    </div>
+
+    <!-- Tambahkan produk lainnya -->
+    <!-- <div class="product"> ... </div> -->
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Shopee-Like Store. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
